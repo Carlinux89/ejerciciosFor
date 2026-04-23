@@ -1,22 +1,25 @@
+//ejercicio 1
 function listarNumeros() {
     for (let i = 0; i < 10; i++) {
         console.log(i)
     }
 }
 
-
+//ejercicio 2
 function listarNumerosReversa() {
     for (let i = 10; i > 0; i--) {
         console.log(i)
     }
 }
 
+//ejericicio 3
 function listarPares() {
     for (let i = 0; i < 20; i += 2) {
         console.log(i)
     }
 }
 
+//ejercicio 4
 function listarImpares() {
     console.log("Listar Impares");
     for (let i = 1; i < 8; i++) {
@@ -27,6 +30,7 @@ function listarImpares() {
     }
 }
 
+//ejercicio 5
 function sumarNumeros() {
     let suma = 0;
     for (let i = 0; i < 10; i++) {
@@ -49,26 +53,46 @@ function limpiar() {
 function ejecutar() {
     console.clear();
     let ejercicio = parseInt(mostrarEnTxt("txtEjercicio"));
-    if (ejercicio == 1) {
-        listarNumeros()
-    } else if (ejercicio == 2) {
-        listarNumerosReversa()
-    } else if (ejercicio == 3) {
-        listarPares()
-    } else if (ejercicio == 4) {
-        listarImpares()
-    } else if (ejercicio == 5) {
-        sumarNumeros()
+    switch(ejercicio){
+        case 1:
+        listarNumeros();
+            break;
+        case 2:
+        listarNumerosReversa();
+            break;
+        case 3:
+        listarPares();
+            break;
+        case 4:
+        listarImpares();
+            break;
+        case 5:
+        sumarNumeros();
+            break;
+        default:
+            break;
     }
 }
 
 
 // function ejecutar(numEjercicio) {
-//     if (numEjercicio == 1) {
-//         listarNumeros()
-//     } else if (numEjercicio == 2) {
-//         listarNumerosReversa()
-//     } else if (numEjercicio == 3) {
-//         listarPares()
+//     switch(numEjercicio){
+//         case 1:
+//         listarNumeros();
+//             break;
+//         case 2:
+//         listarNumerosReversa();
+//             break;
+//         case 3:
+//         listarPares
+//             break;
+//         case 4:
+//         listarImpares
+//             break;
+//         case 5:
+//         sumarNumeros();
+//             break;
+//         default:
+//         break;
 //     }
 // }
