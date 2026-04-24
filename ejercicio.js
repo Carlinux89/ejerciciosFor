@@ -53,21 +53,21 @@ function limpiar() {
 function ejecutar() {
     console.clear();
     let ejercicio = parseInt(mostrarEnTxt("txtEjercicio"));
-    switch(ejercicio){
+    switch (ejercicio) {
         case 1:
-        listarNumeros();
+            listarNumeros();
             break;
         case 2:
-        listarNumerosReversa();
+            listarNumerosReversa();
             break;
         case 3:
-        listarPares();
+            listarPares();
             break;
         case 4:
-        listarImpares();
+            listarImpares();
             break;
         case 5:
-        sumarNumeros();
+            sumarNumeros();
             break;
         default:
             break;
