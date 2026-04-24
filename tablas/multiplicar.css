@@ -1,0 +1,97 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo amigable */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a7f3d0, #fef08a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor tipo tarjeta */
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 15px;
+    color: #1f2937;
+    font-size: 26px;
+}
+
+/* BOTÓN */
+.btn-probar {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+/* Hover con sombra (UX clave) */
+.btn-probar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #16a34a;
+}
+
+/* TABLA */
+.tabla p {
+    background: #fef9c3;
+    margin: 6px 0;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #374151;
+    transition: 0.2s;
+}
+
+/* Efecto divertido al pasar mouse */
+.tabla p:hover {
+    transform: scale(1.03);
+    background: #fde68a;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Tu nombre con estilo */
+.footer span {
+    font-weight: bold;
+    color: #f59e0b;
+}
+
+
+/* Responsive */
+@media (max-width: 480px) {
+    .btn-probar {
+        width: 100%;
+    }
+
+    .tabla p {
+        font-size: 16px;
+    }
+}
