@@ -54,7 +54,7 @@ h1 {
 }
 
 /* TABLA */
-.tabla p {
+.tabla div {
     background: #fef9c3;
     margin: 6px 0;
     padding: 12px;
@@ -66,7 +66,7 @@ h1 {
 }
 
 /* Efecto divertido al pasar mouse */
-.tabla p:hover {
+.tabla div:hover {
     transform: scale(1.03);
     background: #fde68a;
 }
@@ -91,7 +91,7 @@ h1 {
         width: 100%;
     }
 
-    .tabla p {
+    .tabla div {
         font-size: 16px;
     }
 }
